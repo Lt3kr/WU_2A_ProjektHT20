@@ -1,37 +1,86 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
+/* style for main page ----------------------------*/
+
 #mainpagewrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 500px 700px 150px;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 435px 50px 700px 150px;
     grid-template-areas:
-    "he he he"
-    "ap ap ap"
-    "ma ma ma"
-    "fo fo fo";
+    "ds"
+    "ap"
+    "a1"
+    "ma"
+    "fo";
+}
+
+#deadspace{
+    grid-area: ds;
 }
 
 header{
-    grid-area: he;
+    background: rgba(250, 49, 49, 1);
+    height: 125px;
+    width: 100vw;
+    display: flex block;
+    position: fixed;
 }
 
 nav{
-    grid-area: na;
+    background: rgb(241, 25, 25);
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+#navmenu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(253, 193, 193);
+    font-size: 25px;
+}
+
+a:hover{
+    color: rgb(255, 206, 206);
 }
 
 #mainpagepicture{
     grid-area: ap;
-    background: lightgray;
+    background: rgb(197, 40, 40);
 }
 
-main{
-    grid-area: ma;
+#pointatspecials{
+    grid-area: a1;
+    background: rgba(250, 49, 49, 1);
+    text-align: center;
+    font-size: 30px;
 }
 
 footer{
     grid-area: fo;
+    background: rgba(124, 102, 102, 1);
 }
 
 main{
+    grid-area: ma;
+    background: rgba(126, 76, 76);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +88,21 @@ main{
 
 #specialscontainer{
     border: 2px black solid;
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+}
+
+#specialsflexcontainer{
+    width: 700px;
+    height: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.specialsmeal{
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
 }
