@@ -14,10 +14,15 @@
     <div id="mainpagewrapper">
         <header>
             <h1>Restaurang Skärselden</h1>
+            <h3>Din pizzapaus i väntan</h3>
             <nav>
                 <ul id="navmenu">
-                    <li><a href="menu.html">Vår meny</a></li>
-                    <li><a href="about.html">Om oss</a></li>
+                    <li><a class="navlink" href="menu.html">Vår meny</a></li>
+                    <li><a class="navlink" href="about.html">Om oss</a></li>
+                    <li class="navlink" id="opentimes">
+                        <ul>Öppetider:</ul>
+                        <ul>Alla dagar, varje vecka!</ul>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -25,19 +30,20 @@
         <article id="mainpagepicture">picture
             <img src="#" alt="">
         </article>
-        <article id="pointatspecials">V se seklets specialerbjudanden! V</article>
-        <main>
+        <article id="pointatspecials">Se seklets specialerbjudanden nedan!</article>
+        <main id="mainmain">
             <section id="specialscontainer">
                 <h2>Specialerbjudanden!</h2>
                 <div id="specialsflexcontainer">
-                    <article class="specialsmeal">specerbjud1</article>
-                    <article class="specialsmeal">specerbjud2</article>
+                    <article class="specialsmeal">voidpizza</article>
+                    <article class="specialsmeal">kosmisk antipizza</article>
                 </div>
             </section>
         </main>
-        <footer>kontakta oss!
-            <a href="mailto:restaurangskarselden@hotmail.com">Email</a>
-            <p>Telefon: 0666-66 66 66</p>
+        <footer class="contacttext">Kontakta oss!
+            <p><a class="contacttext" href="mailto:restaurangskarselden@hotmail.com">Email</a></p>
+            <p class="contacttext">Telefon: 0666-66 66 66</p>
+            <p class="contacttext">Adress: Långatan 6, Bollnäs</p>
         </footer>
     </div>
 </body>

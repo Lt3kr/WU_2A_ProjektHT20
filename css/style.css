@@ -31,6 +31,7 @@ header{
     width: 100vw;
     display: flex block;
     position: fixed;
+    padding-left: 5px;
 }
 
 nav{
@@ -51,14 +52,20 @@ li{
     list-style-type: none;
 }
 
-a{
+#opentimes{
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(255, 236, 236)
+}
+
+.navlink{
     text-decoration: none;
     color: rgb(253, 193, 193);
     font-size: 25px;
 }
 
-a:hover{
-    color: rgb(255, 206, 206);
+.navlink:hover{
+    color: rgb(255, 236, 236);
 }
 
 #mainpagepicture{
@@ -68,26 +75,22 @@ a:hover{
 
 #pointatspecials{
     grid-area: a1;
-    background: rgba(250, 49, 49, 1);
+    background: rgb(241, 25, 25);
     text-align: center;
     font-size: 30px;
 }
 
-footer{
-    grid-area: fo;
-    background: rgba(124, 102, 102, 1);
-}
-
 main{
     grid-area: ma;
-    background: rgba(126, 76, 76);
+    background: linear-gradient(rgb(241, 25, 25),rgb(104, 0, 0));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #specialscontainer{
-    border: 2px black solid;
+    border: 10px black double;
+    background-color: rgb(197, 40, 40);
     width: 700px;
     height: 500px;
     text-align: center;
@@ -105,4 +108,45 @@ main{
     border: 2px black solid;
     height: 200px;
     width: 200px;
+}
+
+.contacttext{
+    font-size: 20px;
+    color: rgb(199, 0, 0);
+}
+
+footer{
+    grid-area: fo;
+    background: f05454;
+    padding: 10px;
+}
+
+/* style for menu page--------------------- */
+
+
+#menupagewrapper{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 780px 150px;
+    grid-template-areas:
+    "ds"
+    "mm"
+    "fo";
+}
+
+#menumain{
+    grid-area: mm;
+    background: linear-gradient(rgb(241, 25, 25),rgb(104, 0, 0));
+    padding: 20px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuitems{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px black solid;    
 }
