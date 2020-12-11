@@ -5,7 +5,7 @@
     display: border-box;
 }
 
-/* style for main page ----------------------------*/
+/* style for main page -----------------------------------*/
 
 #mainpagewrapper{
     display: grid;
@@ -26,16 +26,30 @@
 }
 
 header{
-    background: rgba(250, 49, 49, 1);
+    background:	rgb(207, 27, 27);
     height: 125px;
     width: 100vw;
     display: flex block;
     position: fixed;
-    padding-left: 5px;
+}
+
+h1{
+    color: rgb(255, 219, 197);
+}
+
+h2{
+    color: rgb(255, 219, 197);
+}
+
+h3{
+    color: rgb(255, 219, 197);
+}
+p{
+    color: rgb(255, 219, 197)
 }
 
 nav{
-    background: rgb(241, 25, 25);
+    background: rgb(207, 27, 27);
     height: 50px;
     width: 100vw;
     position: absolute;
@@ -46,6 +60,8 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border: 2px rgb(255, 219, 197) solid;
+    border-style: solid none solid none;
 }
 
 li{
@@ -55,42 +71,43 @@ li{
 #opentimes{
     margin-right: 30px;
     font-size: 20px;
-    color: rgb(255, 236, 236)
+    color: rgb(255, 219, 197);
 }
 
 .navlink{
     text-decoration: none;
-    color: rgb(253, 193, 193);
+    color: rgb(255, 219, 197);
     font-size: 25px;
 }
 
 .navlink:hover{
-    color: rgb(255, 236, 236);
+    color: rgb(255, 255, 255);
 }
 
 #mainpagepicture{
     grid-area: ap;
-    background: rgb(197, 40, 40);
+    background: linear-gradient(rgb(207, 27, 27),rgb(144, 13, 13));
 }
 
 #pointatspecials{
     grid-area: a1;
-    background: rgb(241, 25, 25);
+    background: rgb(144, 13, 13);
     text-align: center;
     font-size: 30px;
+    color: rgb(255, 219, 197);
 }
 
 main{
     grid-area: ma;
-    background: linear-gradient(rgb(241, 25, 25),rgb(104, 0, 0));
+    background: linear-gradient(rgb(144, 13, 13),rgb(87, 8, 8));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #specialscontainer{
-    border: 10px black double;
-    background-color: rgb(197, 40, 40);
+    border: 2px rgb(255, 219, 197) solid;
+    background-color: rgb(207, 27, 27);
     width: 700px;
     height: 500px;
     text-align: center;
@@ -105,7 +122,7 @@ main{
 }
 
 .specialsmeal{
-    border: 2px black solid;
+    border: 2px rgb(255, 219, 197) solid;
     height: 200px;
     width: 200px;
 }
@@ -117,11 +134,11 @@ main{
 
 footer{
     grid-area: fo;
-    background: f05454;
+    background: rgb(87, 8, 8);
     padding: 10px;
 }
 
-/* style for menu page--------------------- */
+/* style for menu page--------------------------------- */
 
 
 #menupagewrapper{
@@ -138,15 +155,56 @@ footer{
 
 #menumain{
     grid-area: mm;
-    background: linear-gradient(rgb(241, 25, 25),rgb(104, 0, 0));
+    background: linear-gradient(rgb(207, 27, 27),rgb(87, 8, 8));
     padding: 20px 40px 0px 40px;
     display: flex;
     flex-wrap: wrap;
+}
+
+img{
+    height: 200px;
+    width: 200px;
 }
 
 .menuitems{
     width: 200px;
     height: 200px;
     margin: 20px;
-    border: 2px black solid;    
+    border: 2px rgb(255, 219, 197) solid;    
+}
+
+/* style for about page-------------------------------- */
+
+#aboutpagewrapper{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 125px 700px 150px;
+    grid-template-areas:
+    "ds ds"
+    "mb aa"
+    "fo fo";
+}
+
+#aboutmain{
+    grid-area: mb;
+    background: linear-gradient(rgb(207, 27, 27),rgb(87, 8, 8));
+    display: flex;
+}
+
+#aboutsection{
+    background: rgb(207, 27, 27);
+    height: 610px;
+    width: 700px;
+    padding: 10px;
+    border: 2px rgb(255, 219, 197) solid;
+}
+
+aside{
+    grid-area: aa;
+    background: rgb(207, 27, 27);
+    padding: 10px;
+    border: 2px rgb(255, 219, 197) solid;
+    border-style: none solid solid solid;
 }
